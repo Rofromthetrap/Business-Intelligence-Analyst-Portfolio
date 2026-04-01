@@ -1,0 +1,36 @@
+/*------- Microsoft Wide World Importers Sales Dashboard-------*/
+
+
+/*------- Top 10 Cities by Sales -------*/
+
+EVALUATE
+VAR TOP_CITIES =
+TOPN(10,
+SUMMARIZECOLUMNS(
+'Dimension City'[Sales Territory],
+'Dimension City'[City],
+ FILTER(
+                'Dimension Date', 
+                'Dimension Date'[Date]>= DATE(2015, 12, 1) && 
+                'Dimension Date'[Date] <= DATE(2016, 12, 31)
+            ),
+"Sales",[Sales exc Tax]
+),
+[Sales],
+DESC
+)
+RETURN
+ADDCOLUMNS(
+TOP_CITIES,
+"Rank",
+            RANKX(
+                TOP_CITIES,
+                [Sales],
+                ,
+                DESC,
+                DENSE
+            )
+            )
+ORDER BY
+	[Rank]
+	
