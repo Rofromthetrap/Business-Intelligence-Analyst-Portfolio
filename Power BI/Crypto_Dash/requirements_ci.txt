@@ -1,0 +1,6 @@
+twelvedata
+pandas
+matplotlib
+python-dotenv
+jupyter
+nbconvert
