@@ -230,3 +230,9 @@ Correlation Analysis.ipynb
 
 # BI Portfolio venv
 bi_portfolio_venv
+
+# Ignore temporary .tmp files
+*.tmp
+.tmp
+# Dagster temporary folder
+.tmp_dagster/
