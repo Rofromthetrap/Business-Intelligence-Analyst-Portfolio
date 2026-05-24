@@ -4,13 +4,13 @@ Welcome to my Business Intelligence Analyst Portfolio! This document provides a 
 
 ## Power BI Dashboards
 
-1. [**WWI Sales Dashboard**](Power%20BI/Microsoft%20Wide%20World%20Importers/Microsoft%20Wide%20World%20Importers%20Sales%20Dashboard/)  
+1. [**WWI Sales Dashboard**](Power%20BI/Microsoft%20Wide%20World%20Importers/Microsoft%20Wide%20World%20Importers%20Sales%20Dashboard/MS%20WWI%20DW%20Sales%20Dashboard.pbix)  
    A dynamic dashboard to track sales performance across different regions. Includes [WWI Sales KPIs](Power%20BI/Microsoft%20Wide%20World%20Importers/Microsoft%20Wide%20World%20Importers%20Sales%20Dashboard/WWI%20Sales%20KPIs.sql) SQL and [DAX calculations](Power%20BI/Microsoft%20Wide%20World%20Importers/Microsoft%20Wide%20World%20Importers%20Sales%20Dashboard/MS%20Wide%20Word%20Importers%20Sales%20Dashboard%20.dax).
 
-2. [**WWI Purchases Dashboard**](Power%20BI/Microsoft%20Wide%20World%20Importers/Microsoft%20Wide%20World%20Importers%20Purchases%20Dashboard/)  
+2. [**WWI Purchases Dashboard**](Power%20BI/Microsoft%20Wide%20World%20Importers/Microsoft%20Wide%20World%20Importers%20Purchases%20Dashboard/WWI%20Purchases%20Report.pbix)  
    A dynamic dashboard to track purchases performance across different regions. Utilizes Power BI to visualize data from various sources.
 
-3. [**Crypto Dashboard**](Power%20BI/Crypto_Dash/)  
+3. [**Crypto Dashboard**](Power%20BI/Crypto_Dash/Bitcoin%20Report.pbix)  
    Cryptocurrency analysis and visualization dashboard.
 
 4. [**Snowflake SuperStore Sales**](Power%20BI/snowflake_super_store_sales/)  
