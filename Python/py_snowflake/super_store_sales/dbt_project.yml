@@ -36,5 +36,7 @@ models:
       +materialized: view
     staging:
       +materialized: view
+      base:
+        +materialized: view
     analytics:
       +materialized: view
