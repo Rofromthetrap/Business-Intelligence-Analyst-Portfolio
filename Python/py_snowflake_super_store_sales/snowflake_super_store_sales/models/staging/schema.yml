@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: my_dbt_py
+    description: "Total number of returns"
+    config:
+      materialized: table
+
+    columns:
+      - name: total_returns
+        description: "Total count of all returns"
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+            expression: ">= 1"
