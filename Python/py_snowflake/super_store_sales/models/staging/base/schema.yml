@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: base_orders
+    description: "Source Orders table view"
+
+    columns:
+      - name: order_id
+        description: "order identifier"
+        data_tests:
+          - not_null

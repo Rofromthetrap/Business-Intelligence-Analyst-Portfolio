@@ -1,15 +1,9 @@
 version: 2
 
 models:
-  - name: total_returns_count
-    description: "Total number of returns"
-    config:
-      materialized: table
+  - name: stg_fct_orders
+    description: "Main fact table"
 
     columns:
-      - name: total_returns
-        description: "Total count of all returns"
-        tests:
-          - not_null
-          - dbt_utils.expression_is_true:
-             expression: ">= 1"
+      - name: order_id
+        description: "order identifier"
