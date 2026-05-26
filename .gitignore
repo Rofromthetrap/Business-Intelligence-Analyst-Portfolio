@@ -236,3 +236,4 @@ bi_portfolio_venv
 .tmp
 # Dagster temporary folder
 .tmp_dagster/
+*.temp_*

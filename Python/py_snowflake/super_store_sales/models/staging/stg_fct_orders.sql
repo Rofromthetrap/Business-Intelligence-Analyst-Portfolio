@@ -26,8 +26,10 @@ select
         WHEN SHIP_MODE = 'Second Class'  THEN 130
     END SHIP_STATUS_KEY,
     CUSTOMER_ID CUSTOMER_KEY,
+    --{{ dbt_utils.generate_surrogate_key(['product_name']) }} as PRODUCT_KEY,
     PRODUCT_ID PRODUCT_KEY,
     POSTAL_CODE POSTAL_CODE_KEY,
+    {{ dbt_utils.generate_surrogate_key(['postal_code','city']) }} as SUBREGION_KEY,
     ORDER_DATE,
     SHIP_DATE,
     IS_RETURNED,
